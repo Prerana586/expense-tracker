@@ -10,7 +10,7 @@ An AI-powered expense tracker built with Python, Streamlit, and Groq AI.
 - Deployed online for free
 
 ## Live Demo
-https://expense-tracker-ggxbmfce8z5jfhdnakkwhd.streamlit.app/[Click here to try the app](https://prerana586-expense-tracker-app.streamlit.app)
+[Click here to try the app](https://prerana586-expense-tracker-app.streamlit.app)
 
 ## Tech Stack
 - Python
