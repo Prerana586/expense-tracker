@@ -2,9 +2,13 @@ from groq import Groq
 import json, re, os
 from datetime import date
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+
+# Works both locally and on Streamlit Cloud
+api_key = os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY", "")
+client = Groq(api_key=api_key)
 
 PARSE_PROMPT = """You are an expense parser. Extract expense data from natural language.
 Return ONLY valid JSON — no markdown, no explanation — matching this schema:
